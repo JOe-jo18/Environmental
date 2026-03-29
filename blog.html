@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* --- Blog Section Styling --- */
+.blog-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+ /* --- Navbar --- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d4a3e;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .navlinks a {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: inline-block; /* Fixed from previous grid setting */
+        }
+
+        .navlinks a:hover {
+            color: #4CAF50;
+        }
+
+        .navlinks a:last-child {
+            background-color: #2d4a3e;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+        }
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.category {
+    background: #e8f5e9;
+    color: #2d4a22;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.blog-title {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.blog-content p {
+    margin-bottom: 1.2rem;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.blog-content h3 {
+    color: #2d4a22;
+    margin: 2rem 0 1rem 0;
+}
+
+.blog-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.8rem;
+}
+
+blockquote {
+    border-left: 4px solid #4CAF50;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.blog-footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+/* Mobile Tweak */
+@media (max-width: 600px) {
+    .blog-container { padding: 1.5rem; }
+    .blog-title { font-size: 1.6rem; }
+    .blog-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+}
+
+/* Update your CSS to handle multiple posts */
+#blog {
+    background-color: #f1f4f1; /* Light contrast background */
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tweak the container to work inside a grid */
+.blog-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0 !important; /* Reset the margin for grid use */
+}
+
+.blog-title {
+    font-size: 1.8rem; /* Slightly smaller for grid view */
+}
+    </style>
+</head>
+<body>
+
+  <nav class="navbar">
+            <div class="logo">Environmental Consultancy</div>
+            <div class="navlinks">
+                 <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="joinus.html">Join Us</a>
+            </div>
+        </nav>
+
+    <section id="blog" class="reveal">
+        <h2 class="reveal">Latest Insights</h2>
+        <article class="blog-container">
+            <div class="blog-header">
+                <span class="category">Sustainability</span>
+                <span class="date">March 2026 • 5 Min Read</span>
+            </div>
+            
+            <h1 class="blog-title">The Green Mandate: Why Sustainability is Liberia’s Next Economic Frontier</h1>
+            
+            <div class="blog-content">
+                <p class="intro">As Liberia continues its journey toward industrial growth and infrastructure development, a critical question faces our nation’s leaders: <em>Can we achieve rapid economic progress without sacrificing our natural heritage?</em></p>
+                
+                <p>At <strong>Environmental Consultancy</strong>, we believe the answer isn't just "yes"—we believe that sustainable practices are the key to long-term profitability and international competitiveness in the African market.</p>
+
+                <h3>The Shift in Global Investment</h3>
+                <p>The world has changed. International investors are no longer just looking at bottom lines; they are looking at <strong>ESG (Environmental, Social, and Governance)</strong> scores. For Liberian businesses, proving a robust Environmental Impact Assessment (EIA) is now a requirement for securing global capital.</p>
+
+                <blockquote>
+                    "True sustainability is the intersection of environmental health, social equity, and economic vitality."
+                </blockquote>
+
+                <h3>Three Pillars of Sustainable Growth</h3>
+                <ul>
+                    <li><strong>Proactive EIAs:</strong> Identifying ecological risks early saves thousands in potential remediation costs and legal delays.</li>
+                    <li><strong>Circular Waste Management:</strong> From recycling in Monrovia to organic composting, converting output into input reduces overhead.</li>
+                    <li><strong>Climate Adaptation:</strong> Investing in resilient design today protects your assets for the next fifty years.</li>
+                </ul>
+
+                <p>Sustainability is more than compliance with the EPA; it is about stewardship. Liberia holds a significant portion of the Upper Guinean Forest—we are the "lungs" of West Africa.</p>
+            </div>
+
+            
+        </article>
+    </section>
+
+    <article class="blog-container reveal" style="margin-top: 4rem;">
+        <div class="blog-header">
+            <span class="category">Energy Advisory</span>
+            <span class="date">March 2026 • 4 Min Read</span>
+        </div>
+        
+        <h1 class="blog-title">Powering the Future: Why Liberian Businesses are Switching to Solar</h1>
+        
+        <div class="blog-content">
+            <p class="intro">In an era of rising fuel costs and grid instability, energy independence is no longer a luxury—it is a competitive necessity for the modern African enterprise.</p>
+            
+            <p>At <strong>Environmental Consultancy</strong>, we are seeing a massive shift in how industries approach their power needs. The transition to renewable energy isn't just about "being green"; it's about operational resilience.</p>
+
+            <h3>Why the Switch is Happening Now</h3>
+            <p>With the cost of solar photovoltaic (PV) technology dropping by over 80% in the last decade, the return on investment (ROI) for commercial solar installations has never been more attractive.</p>
+
+            <ul>
+                <li><strong>Reduced Overhead:</strong> Drastically lower your monthly LEC bills and diesel generator expenses.</li>
+                <li><strong>Uninterrupted Operations:</strong> Battery storage solutions ensure your business stays online even during grid outages.</li>
+                <li><strong>Carbon Credits:</strong> Position your company to benefit from international green financing and carbon offsetting programs.</li>
+            </ul>
+
+            <blockquote>
+                "The sun doesn't send a monthly bill. Investing in solar is fixing your energy costs for the next 25 years."
+            </p></blockquote>
+
+            <h3>Our Approach to Energy Advisory</h3>
+            <p>We don't just sell panels; we provide engineering-led strategy. We conduct load audits to understand your peak usage and design systems that scale with your business growth, ensuring you don't overspend on capacity you don't need.</p>
+        </div>
+
+        <div class="blog-footer">
+            <button id="button">Get an Energy Audit</button>
+        </div>
+    </article>
+</body>
+</html>
